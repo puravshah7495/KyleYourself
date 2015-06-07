@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.purav.kyleyourself.GameFragment">
+
+	<!-- TODO: Update blank fragment layout -->
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="start"
+		android:id="@+id/startButton"/>
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Skip"
+		android:id="@+id/skipButton"
+		android:layout_toRightOf="@id/startButton"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Num Iterations: "
+		android:layout_below="@id/startButton"
+		android:textSize="@dimen/abc_text_size_large_material"
+		android:id="@+id/iterationText"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/iterationText"
+		tools:context=".MainActivity"/>
+</RelativeLayout>
